@@ -1,0 +1,21 @@
+{
+    "name": "self-interview",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:hoannguyen02/self-interview.git",
+    "author": "Hoan Nguyen <nguyenvanhoan02@gmail.com>",
+    "license": "MIT",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "devDependencies": {
+        "husky": "^4.3.0",
+        "lint-staged": "^10.5.1",
+        "prettier": "^2.2.0"
+    }
+}
